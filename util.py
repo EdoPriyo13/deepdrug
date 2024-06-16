@@ -106,7 +106,7 @@ def MetadataGenerate(database, sample):
     drug_feature = {}
     for each in os.listdir(Drug_feature_file):
         drug_pubchem_id_set.append(each.split('.')[0])
-        print each.split('.')[0]
+        print (each.split('.')[0])
         feat_mat, adj_list, degree_list = hkl.load('%s/%s' % (Drug_feature_file, each))
         drug_feature[each.split('.')[0]] = [feat_mat, adj_list, degree_list]
     assert len(drug_pubchem_id_set) == len(drug_feature.values())
