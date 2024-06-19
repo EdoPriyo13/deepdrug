@@ -1,9 +1,11 @@
 from __future__ import print_function
 
+# Update your import statements in graph.py
 from keras import activations, initializers, constraints
 from keras import regularizers
-from keras.engine import Layer
+from keras.layers import Layer
 import keras.backend as K
+
 
 
 import keras
